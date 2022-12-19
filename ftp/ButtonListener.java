@@ -1,6 +1,6 @@
 package listener;
 
-import aff.Window;
+import aff.Fenetre;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;

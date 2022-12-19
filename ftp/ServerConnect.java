@@ -13,7 +13,7 @@ import java.net.Socket;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
-import aff.Window;
+import aff.Fenetre;
 
 import javax.swing.JButton;
 import java.sql.Timestamp;
@@ -127,7 +127,7 @@ public class ServerConnect implements ActionListener {
         }
 
         if(b && ((JButton)e.getSource()).getText().equals("New Server")){
-            Window formulaireServer = new Window("Creation nouveau server",400,100,consoleFrame,this);  
+            Fenetre formulaireServer = new Fenetre("Creation nouveau server",400,100,consoleFrame,this);  
         }
 		
 		if(b && ((JButton)e.getSource()).getText().equals("Choose file...")){

@@ -2,6 +2,6 @@ package aff;
 
 public class Affichage {
     public static void main(String[] args) {
-        Window main = new Window("FileTransfer", 800, 600);
+        Fenetre main = new Fenetre("FileTransfer", 800, 600);
     }
 }
