@@ -142,7 +142,7 @@ public class FileClient implements Runnable {
 		fis.close();
 		dos.close();
 		System.out.println("--------------------------------------");
-	}
+	}	
 	
 	public static void main(String[] args) throws Exception {
 		// FileClient fc = new FileClient("localhost", 1988, "Examen-OneDay-17-Dec-2018-P11.pdf");

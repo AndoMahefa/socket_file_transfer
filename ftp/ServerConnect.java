@@ -79,6 +79,7 @@ public class ServerConnect implements ActionListener {
 		setChooseComponent(chooseComponent);
     }
 	
+	//fonction miselecte fichier
 	public File[] getSelectedFiles(String filter) {
 		JFileChooser fc = new JFileChooser();
 		System.out.println("filter" + filter);
@@ -107,6 +108,7 @@ public class ServerConnect implements ActionListener {
 		String ms = null;
 		Timestamp d = new Timestamp(System.currentTimeMillis());
         
+		//connexion
         if( b && ((JButton)e.getSource()).getText().equals("Connection")) {
             try {
                 String host = getCSP().getHostV().getText();
@@ -126,11 +128,13 @@ public class ServerConnect implements ActionListener {
 			consoleFrame.repaint();
         }
 
+		//creation serveur
         if(b && ((JButton)e.getSource()).getText().equals("New Server")){
             Fenetre formulaireServer = new Fenetre("Creation nouveau server",400,100,consoleFrame,this);  
         }
-		
-		if(b && ((JButton)e.getSource()).getText().equals("Choose file...")){
+
+		//mchoisir anle fichier + mandefa ilay fichier
+		if(b && ((JButton)e.getSource()).getText().equals("Choisir un fichier ...")){
 			if(fileC != null) {
 				try {
 					System.out.println("Envoi des fichiers");
@@ -159,6 +163,7 @@ public class ServerConnect implements ActionListener {
 		
     }
 	
+	//fonction misend anle fichier
 	public void sendFiles(File[] files) throws Exception {
 		InetAddress cI = fileC.getS().getInetAddress();
 		System.out.println(cI.getHostAddress());

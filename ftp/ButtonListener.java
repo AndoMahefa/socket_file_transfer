@@ -54,6 +54,7 @@ public class ButtonListener implements ActionListener{
 		topFrame.dispatchEvent(new WindowEvent(topFrame,WindowEvent.WINDOW_CLOSING));
 	}
 
+	//creation serveur
     public void actionPerformed(ActionEvent e) {
         boolean b = e.getSource().getClass() == JButton.class; 
         if(b==true && ((JButton)e.getSource()).getText().equals("valider")){
@@ -67,7 +68,7 @@ public class ButtonListener implements ActionListener{
 				Thread fs = new Thread(fileServeur);
 				fs.start();
 				this.sc.setFs(fileServeur);
-				messResult = "Serveur cree avec succes";
+				messResult = "Serveur creer avec succes";
                 consoleFrame.setColor(Color.GREEN);
 			}
 			catch(Exception exp) {

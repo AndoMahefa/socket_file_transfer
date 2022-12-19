@@ -14,7 +14,7 @@ import java.awt.GridBagLayout;
 import java.awt.Insets; 
 import java.util.Vector;
 
-public  class ChooseComponent extends JPanel {
+public class ChooseComponent extends JPanel {
 	GridBagLayout gd = new GridBagLayout();
 	GridBagConstraints c = new GridBagConstraints();
 	Vector a = new Vector();

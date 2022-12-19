@@ -19,6 +19,8 @@ import listener.*;
 public class Fenetre extends JFrame {
     JPanel container;
 
+    //initialisation
+    //! mametraka anle composant rehetra(jComponent)
     public void init() {
         container.setSize(getWidth(),getHeight());
         Client_ServerP csp = new Client_ServerP(container.getWidth(),50);
@@ -64,6 +66,7 @@ public class Fenetre extends JFrame {
 		setVisible(true);
     }
 
+    //creation formulaire et ajout formulaire
     public void creerFormulaireServer(ConsoleFrame consoleFrame, ServerConnect sc){
         FormulaireServer fs = new FormulaireServer();
         container.add(fs);

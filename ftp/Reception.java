@@ -48,6 +48,7 @@ public class Reception implements Runnable {
 		}
 	}
 	
+	//fonction msave anle fichier
 	public void saveFile() throws IOException {
 		System.out.println("receiver/"+file.substring(file.lastIndexOf("/")+1));
 		FileOutputStream fos = new FileOutputStream("receiver/"+file.substring(file.lastIndexOf("/")+1));

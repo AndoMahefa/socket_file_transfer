@@ -12,7 +12,7 @@ public class FileChooserFilter extends JPanel {
 	public FileChooserFilter(int w, int h) {
 		setPreferredSize(new Dimension(w,h));
 		setBorder(BorderFactory.createLineBorder(Color.BLUE));
-		setFileChooseB(new JButton("Choose file..."));
+		setFileChooseB(new JButton("Choisir un fichier ..."));
 		add(fileChooseB);
 	}
 	
